@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Social Media Content Kit",
+        "description": "Ready-to-use content templates for all social platforms.",
+        "price": 19.99,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "500+ post templates",
+            "Editable Canva files",
+            "Platform-specific designs"
+        ],
+        "icon": "social-icon"
+    },
+    {
+        "id": 2,
+        "name": "Resume Builder Pro",
+        "description": "Create job-winning resumes with advanced tools.",
+        "price": 12.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "ATS-friendly templates",
+            "Real-time preview",
+            "PDF export"
+        ],
+        "icon": "resume-icon"
+    },
+    {
+        "id": 3,
+        "name": "Automation Toolkit",
+        "description": "Automate your daily workflow and save time.",
+        "price": 29.99,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Task automation",
+            "Zapier integration",
+            "Workflow builder"
+        ],
+        "icon": "automation-icon"
+    },
+    {
+        "id": 4,
+        "name": "AI Writing Pro",
+        "description": "Generate high-quality content using AI.",
+        "price": 15.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Blog writing",
+            "Ad copy generation",
+            "Grammar correction"
+        ],
+        "icon": "ai-writing-icon"
+    },
+    {
+        "id": 5,
+        "name": "Design Templates Pack",
+        "description": "Professional design templates for various needs.",
+        "price": 39.99,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "1000+ templates",
+            "Figma & PSD files",
+            "Fully customizable"
+        ],
+        "icon": "design-icon"
+    },
+    {
+        "id": 6,
+        "name": "Premium Stock Assets",
+        "description": "Access premium photos, videos, and graphics.",
+        "price": 59.99,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Unlimited downloads",
+            "HD & 4K quality",
+            "Commercial license"
+        ],
+        "icon": "stock-icon"
+    },
+    {
+        "id": 7,
+        "name": "Email Marketing Suite",
+        "description": "Create and manage email campaigns بسهولة.",
+        "price": 17.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Drag & drop builder",
+            "Automation emails",
+            "Analytics reports"
+        ],
+        "icon": "email-icon"
+    },
+    {
+        "id": 8,
+        "name": "Landing Page Builder",
+        "description": "Build high-converting landing pages quickly.",
+        "price": 49.99,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "No-code builder",
+            "Responsive design",
+            "Conversion tracking"
+        ],
+        "icon": "landing-icon"
+    },
+    {
+        "id": 9,
+        "name": "Analytics Dashboard Pro",
+        "description": "Track and analyze your business performance.",
+        "price": 24.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Real-time data",
+            "Custom reports",
+            "Multi-source integration"
+        ],
+        "icon": "analytics-icon"
+    }
+]
