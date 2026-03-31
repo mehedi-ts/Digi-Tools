@@ -1,21 +1,28 @@
+import { ShoppingCart } from "lucide-react";
 import React from "react";
 
 const Navbar = () => {
   const lists = (
     <>
       <li>
-        <a>Item 1</a>
+        <a className="text-base font-semibold">Products</a>
       </li>
       <li>
-        <a>Item 1</a>
+        <a className="text-base font-semibold">Features</a>
       </li>
       <li>
-        <a>Item 1</a>
+        <a className="text-base font-semibold">Pricing</a>
+      </li>
+      <li>
+        <a className="text-base font-semibold">Testimonials</a>
+      </li>
+      <li>
+        <a className="text-base font-semibold">FAQ</a>
       </li>
     </>
   );
   return (
-    <div className=" bg-base-100 shadow-sm ">
+    <div className=" bg-base-100 shadow-sm py-2 ">
       <div className="max-w-325 navbar  mx-auto">
         <div className="navbar-start  ">
           <div className="dropdown">
@@ -38,20 +45,26 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow  font-bold "
             >
               {lists}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl bg-linear-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
-            daisyUI
+          <a className=" text-2xl md:text-3xl font-bold bg-linear-to-r from-[#5337F6] to-[#9215FA] bg-clip-text text-transparent">
+            Digi Tools
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{lists}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end gap-4 ">
+          <a className=" cursor-pointer">
+            <ShoppingCart size={20}></ShoppingCart>
+          </a>
+          <a className="text-base font-semibold cursor-pointer">Login</a>
+          <a className="btn rounded-full text-base font-semibold bg-linear-to-r from-[#5337F6] to-[#9215FA] text-white hidden md:flex">
+            Get Started
+          </a>
         </div>
       </div>
     </div>
