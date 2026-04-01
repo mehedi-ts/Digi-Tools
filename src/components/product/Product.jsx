@@ -3,10 +3,16 @@ import React from "react";
 const Product = ({ product, handleCartProducts, cartProduct }) => {
   const isInCart = cartProduct.some((item) => item.id === product.id);
   const { name, description, price, period, tag, features, icon } = product;
+  const tagbest = tag === "best seller";
+
   return (
     <div className="card w-full h-full bg-base-100 shadow-sm border border-[#F2F2F2] p-6">
       <div className="tag  flex items-center justify-end">
-        <span className="bg-[#FEF3C6] px-3 py-1.5 rounded-full">{tag}</span>
+        <span
+          className={`${tag === "best seller" ? "bg-[#FEF3C6] text-[#BB4D00]" : tag === "popular" ? "bg-[#E1E7FF] text-[#7F20F9]" : "bg-[#DBFCE7] text-[#0A883E]"} px-3 py-1.5 rounded-full `}
+        >
+          {tag}
+        </span>
       </div>
       <div className="contant flex flex-col h-full gap-4">
         <div className="img h-15 w-15 rounded-full border border-[#F2F2F2] flex items-center justify-center">
