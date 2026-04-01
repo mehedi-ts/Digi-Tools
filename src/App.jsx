@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import Banner from "./components/banner/Banner";
 import Footer from "./components/footer/Footer";
@@ -19,6 +20,7 @@ function App() {
       <Pricing></Pricing>
       <Workflow></Workflow>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   );
 }

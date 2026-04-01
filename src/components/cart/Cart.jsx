@@ -2,11 +2,12 @@ import React from "react";
 import Empty from "../empty/Empty";
 import CartItem from "../Cartitem/CartItem";
 
-const Cart = ({ cartProduct, handleChackout }) => {
+const Cart = ({ cartProduct, handleChackout, handleCartDelet }) => {
   console.log(cartProduct);
   const total = Math.round(
     cartProduct.reduce((sum, item) => sum + item.price, 0),
   );
+
   if (cartProduct.length === 0) {
     return <Empty></Empty>;
   }
@@ -16,7 +17,7 @@ const Cart = ({ cartProduct, handleChackout }) => {
       <h5 className="text-2xl font-bold text-[#101727]">Your Cart</h5>
       <div className="cart-item flex flex-col gap-2">
         {cartProduct.map((pro) => (
-          <CartItem pro={pro}></CartItem>
+          <CartItem pro={pro} handleCartDelet={handleCartDelet}></CartItem>
         ))}
       </div>
       <div className=" flex items-center justify-between">

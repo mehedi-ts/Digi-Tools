@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./../product/Product";
 
-const CartItem = ({ pro }) => {
+const CartItem = ({ pro, handleCartDelet }) => {
   return (
     <div className="w-full bg-[#F9FAFC] p-5  rounded-xl flex items-center justify-between">
       <div className="flex items-center gap-4">
@@ -15,7 +15,12 @@ const CartItem = ({ pro }) => {
           <p className="text-base text-[#627382] font-medium">${pro.price}</p>
         </div>
       </div>
-      <span className="text-red-500">remove</span>
+      <span
+        onClick={() => handleCartDelet(pro.id)}
+        className="text-red-500 hover:text-red-700 cursor-pointer"
+      >
+        remove
+      </span>
     </div>
   );
 };

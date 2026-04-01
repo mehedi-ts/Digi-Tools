@@ -1,6 +1,7 @@
 import React, { Suspense, useMemo, useState } from "react";
 import Products from "../products/Products";
 import Cart from "../cart/Cart";
+import { toast } from "react-toastify";
 
 const Shop = () => {
   const ProductsPromise = useMemo(() => {
@@ -10,9 +11,16 @@ const Shop = () => {
   const [cartProduct, setCartProduct] = useState([]);
   const handleCartProduct = (product) => {
     setCartProduct((cartProduct) => [...cartProduct, product]);
+    toast.success("Product added to cart successfully");
   };
   const handleChackout = () => {
     setCartProduct([]);
+    toast.success("Checkout completed successfully");
+  };
+  const handleCartDelet = (id) => {
+    const remaining = cartProduct.filter((product) => product.id !== id);
+    setCartProduct(remaining);
+    toast("Removed from cart successfully!");
   };
 
   const [toggle, setToggle] = useState("products");
@@ -59,6 +67,7 @@ const Shop = () => {
             <Cart
               cartProduct={cartProduct}
               handleChackout={handleChackout}
+              handleCartDelet={handleCartDelet}
             ></Cart>
           )}
         </div>

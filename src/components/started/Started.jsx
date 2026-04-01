@@ -6,7 +6,7 @@ import roc from "../../assets/rocket.png";
 const Started = () => {
   return (
     <div className="bg-[#F9FAFC]">
-      <div className="main-started border max-w-325 mx-auto pb-30 ">
+      <div className="main-started  max-w-325 mx-auto pb-30 ">
         <div className="started-title text-center flex flex-col items-center gap-4 mb-10">
           <h1 className="text-[#101727] text-3xl md:text-5xl font-extrabold">
             Get Started in 3 Steps
