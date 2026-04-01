@@ -3,7 +3,6 @@ import React from "react";
 const Product = ({ product, handleCartProducts, cartProduct }) => {
   const isInCart = cartProduct.some((item) => item.id === product.id);
   const { name, description, price, period, tag, features, icon } = product;
-  const tagbest = tag === "best seller";
 
   return (
     <div className="card w-full h-full bg-base-100 shadow-sm border border-[#F2F2F2] p-6">

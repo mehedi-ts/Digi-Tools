@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="bg-[#101727] pt-30 pb-8">
       <div className="footer-main max-w-325 mx-auto flex flex-col gap-10">
         <footer className="footer sm:footer-horizontal px-2 md:px-0   text-white ">
-          <aside className="w-[300px]">
+          <aside className="w-75">
             <h1 className="text-3xl font-bold">Digi Tools</h1>
             <p className="text-base">
               Premium digital tools for creators, professionals, and businesses.
