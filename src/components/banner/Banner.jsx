@@ -1,6 +1,7 @@
 import React from "react";
 import bannerImg from "../../assets/banner.png";
 import groupIcon from "../../assets/Group.svg";
+import clickImg from "../../assets/play.png";
 
 const Banner = () => {
   return (
@@ -28,8 +29,9 @@ const Banner = () => {
             <button className="btn rounded-full text-base font-semibold bg-linear-to-r from-[#5337F6] to-[#9215FA] text-white">
               Explore Products
             </button>
-            <button className="btn btn-primary btn-outline rounded-full text-base font-semibold ">
-              Watch Demo
+            <button className="btn btn-primary btn-outline rounded-full text-base font-semibold flex items-center gap-1 ">
+              <img src={clickImg} alt="" />
+              <span>Watch Demo</span>
             </button>
           </div>
         </div>

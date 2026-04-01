@@ -1,9 +1,9 @@
-import React, { Suspense, useMemo, useState } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import Products from "../products/Products";
 import Cart from "../cart/Cart";
 import { toast } from "react-toastify";
 
-const Shop = () => {
+const Shop = ({ setCartCount }) => {
   const ProductsPromise = useMemo(() => {
     return fetch("/data.json").then((res) => res.json());
   }, []);
@@ -13,6 +13,9 @@ const Shop = () => {
     setCartProduct((cartProduct) => [...cartProduct, product]);
     toast.success("Product added to cart successfully");
   };
+  useEffect(() => {
+    setCartCount(cartProduct.length);
+  }, [cartProduct]);
   const handleChackout = () => {
     setCartProduct([]);
     toast.success("Checkout completed successfully");
@@ -20,7 +23,7 @@ const Shop = () => {
   const handleCartDelet = (id) => {
     const remaining = cartProduct.filter((product) => product.id !== id);
     setCartProduct(remaining);
-    toast("Removed from cart successfully!");
+    toast.warn("Removed from cart successfully!");
   };
 
   const [toggle, setToggle] = useState("products");

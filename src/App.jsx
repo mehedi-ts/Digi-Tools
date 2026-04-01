@@ -8,14 +8,17 @@ import Shop from "./components/shop/Shop";
 import Started from "./components/started/Started";
 import Stats from "./components/stats/Stats";
 import Workflow from "./components/workflow/Workflow";
+import { useState } from "react";
 
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+  console.log(cartCount);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartCount={cartCount}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
-      <Shop></Shop>
+      <Shop setCartCount={setCartCount}></Shop>
       <Started></Started>
       <Pricing></Pricing>
       <Workflow></Workflow>

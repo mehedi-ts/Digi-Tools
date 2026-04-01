@@ -42,7 +42,7 @@ const Product = ({ product, handleCartProducts, cartProduct }) => {
         <div className="bt">
           <button
             onClick={() => handleCartProducts(product)}
-            className={`btn btn-primary w-full rounded-full py-3 px-4   ${isInCart ? "btn-disabled bg-green-500 text-white" : " bg-linear-to-r from-[#5337F6] to-[#9215FA]"}`}
+            className={`btn btn-primary w-full rounded-full py-3 px-4   ${isInCart ? "btn-disabled text-black" : " bg-linear-to-r from-[#5337F6] to-[#9215FA]"}`}
           >
             {isInCart ? "Added to cart" : "Buy now"}
           </button>
