@@ -100,7 +100,10 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="card h-full w-full bg-base-100 shadow-sm border border-[#F2F2F2] p-6 bg-linear-to-r from-[#5337F6] to-[#9215FA] text-white rounded-2xl">
+          <div className="card h-full w-full bg-base-100 shadow-sm border border-[#F2F2F2] p-6 bg-linear-to-r from-[#5337F6] to-[#9215FA] text-white rounded-2xl relative">
+            <div className="tag bg-amber-200 px-3 py-1 w-fit text-black rounded-full absolute -top-4 left-[40%]">
+              <p>popular</p>
+            </div>
             <div className="contant h-full flex flex-col gap-4">
               <h3 className="font-bold text-2xl text-[#ffffff]">Pro</h3>
               <p className="text-base text-[#ffffff]">Best for professionals</p>

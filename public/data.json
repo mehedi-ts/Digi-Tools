@@ -12,7 +12,7 @@
             "Editable Canva files",
             "Platform-specific designs"
         ],
-        "icon": "social-icon"
+        "icon": "https://i.ibb.co.com/mC8Wzb6C/social-media.png"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "Real-time preview",
             "PDF export"
         ],
-        "icon": "resume-icon"
+        "icon": "https://i.ibb.co.com/HDW2MXwQ/writing-2327400-1.png"
     },
     {
         "id": 3,
@@ -42,7 +42,7 @@
             "Zapier integration",
             "Workflow builder"
         ],
-        "icon": "automation-icon"
+        "icon": "https://i.ibb.co.com/LD9Z7HBJ/operation.png"
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
             "Ad copy generation",
             "Grammar correction"
         ],
-        "icon": "ai-writing-icon"
+        "icon": "https://i.ibb.co.com/HDW2MXwQ/writing-2327400-1.png"
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
             "Figma & PSD files",
             "Fully customizable"
         ],
-        "icon": "design-icon"
+        "icon": "https://i.ibb.co.com/fzp9pLgc/design-tool.png"
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
             "HD & 4K quality",
             "Commercial license"
         ],
-        "icon": "stock-icon"
+        "icon": "https://i.ibb.co.com/fzp9pLgc/design-tool.png"
     },
     {
         "id": 7,
@@ -102,7 +102,7 @@
             "Automation emails",
             "Analytics reports"
         ],
-        "icon": "email-icon"
+        "icon": "https://i.ibb.co.com/mC8Wzb6C/social-media.png"
     },
     {
         "id": 8,
@@ -117,7 +117,7 @@
             "Responsive design",
             "Conversion tracking"
         ],
-        "icon": "landing-icon"
+        "icon": "https://i.ibb.co.com/fzp9pLgc/design-tool.png"
     },
     {
         "id": 9,
@@ -132,6 +132,6 @@
             "Custom reports",
             "Multi-source integration"
         ],
-        "icon": "analytics-icon"
+        "icon": "https://i.ibb.co.com/DDbcJ0y6/portfolio.png"
     }
 ]

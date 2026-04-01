@@ -1,6 +1,6 @@
 import React, { Suspense, useMemo, useState } from "react";
 import Products from "../products/Products";
-import Cart from "../cart/cart";
+import Cart from "../cart/Cart";
 
 const Shop = () => {
   const ProductsPromise = useMemo(() => {
@@ -11,6 +11,9 @@ const Shop = () => {
   const handleCartProduct = (product) => {
     setCartProduct((cartProduct) => [...cartProduct, product]);
   };
+  const handleChackout = () => {
+    setCartProduct([]);
+  };
 
   const [toggle, setToggle] = useState("products");
   const HandleToggle = (togg) => {
@@ -19,9 +22,9 @@ const Shop = () => {
 
   return (
     <div className="py-28">
-      <div className="main-shop max-w-325 border mx-auto">
-        <div className="shop-title flex flex-col items-center gap-4 text-center">
-          <h2 className="text-[#101727] text-5xl font-extrabold">
+      <div className="main-shop max-w-325  mx-auto">
+        <div className="shop-title flex flex-col items-center gap-4 text-center mb-10">
+          <h2 className="text-[#101727] text-3xl md:text-5xl font-extrabold">
             Premium Digital Tools
           </h2>
           <p className="text-[#627382] text-base">
@@ -49,10 +52,14 @@ const Shop = () => {
               <Products
                 ProductsPromise={ProductsPromise}
                 handleCartProduct={handleCartProduct}
+                cartProduct={cartProduct}
               ></Products>
             </Suspense>
           ) : (
-            <Cart></Cart>
+            <Cart
+              cartProduct={cartProduct}
+              handleChackout={handleChackout}
+            ></Cart>
           )}
         </div>
       </div>
