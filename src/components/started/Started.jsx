@@ -8,14 +8,14 @@ const Started = () => {
     <div className="bg-[#F9FAFC]">
       <div className="main-started border max-w-325 mx-auto pb-30 ">
         <div className="started-title text-center flex flex-col items-center gap-4 mb-10">
-          <h1 className="text-[#101727] text-5xl font-extrabold">
+          <h1 className="text-[#101727] text-3xl md:text-5xl font-extrabold">
             Get Started in 3 Steps
           </h1>
-          <p className="text-[#627382] text-base">
+          <p className="text-[#627382] text-base px-0.5 md:p-0">
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="started-card flex flex-col md:flex-row items-center gap-7 ">
+        <div className="started-card flex px-2 md:px-0 flex-col md:flex-row items-center gap-7 ">
           <div className="card-main border p-6 bg-white border-[#F1F1F1] rounded-2xl">
             <div className=" flex items-center justify-end">
               <div className="count h-10 w-10 rounded-full bg-linear-to-r from-[#5337F6] to-[#9215FA] flex items-center justify-center">
